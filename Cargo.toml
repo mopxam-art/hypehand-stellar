@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/config",
+]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+config = { version = "0.14", default-features = false }
+dotenvy = "0.15"
