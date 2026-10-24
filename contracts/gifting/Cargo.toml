@@ -1,0 +1,14 @@
+[package]
+name = "gifting"
+version = "0.1.0"
+edition = "2021"
+description = "Soroban Smart Contract for HypeHand Gifting Logic"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
