@@ -1,0 +1,15 @@
+[package]
+name = "hypehand-utils"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Common utility functions and data primitives for HypeHand Stellar integration"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]

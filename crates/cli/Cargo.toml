@@ -1,0 +1,21 @@
+[package]
+name = "hypehand-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "HypeHand CLI for managing Stellar contracts and gift transactions"
+
+[[bin]]
+name = "hypehand-cli"
+path = "src/main.rs"
+
+[dependencies]
+clap = { workspace = true }
+hypehand-utils = { path = "../utils" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
