@@ -1,0 +1,36 @@
+[package]
+name = "hypehand-keys"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+description = "Secure secret management and AES-256-GCM encrypted keystore for Stellar keys"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+]
+
+[dependencies]
+zeroize = { workspace = true }
+secrecy = { workspace = true }
+aes-gcm = { workspace = true }
+argon2 = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+base64 = { workspace = true }
+stellar-strkey = { workspace = true }
+ed25519-dalek = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[lints]
+workspace = true

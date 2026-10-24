@@ -1,0 +1,28 @@
+[package]
+name = "hypehand-metrics"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+description = "Prometheus telemetry and latency metrics exporter for HypeHand Stellar services"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+]
+
+[dependencies]
+metrics = { workspace = true }
+metrics-exporter-prometheus = { workspace = true }
+
+[dev-dependencies]
+metrics = { workspace = true }
+metrics-exporter-prometheus = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,27 @@
+[package]
+name = "hypehand-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+description = "Command-line interface for the HypeHand Stellar payments platform"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+]
+
+[[bin]]
+name = "hypehand"
+path = "src/main.rs"
+
+[dependencies]
+clap = { workspace = true }
+
+[lints]
+workspace = true

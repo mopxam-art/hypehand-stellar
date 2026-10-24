@@ -1,0 +1,27 @@
+[package]
+name = "hypehand-events"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+description = "Typed event schemas and Serde serialization for HypeHand Soroban contracts"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+]
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+
+[lints]
+workspace = true
