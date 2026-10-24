@@ -1,0 +1,14 @@
+[package]
+name = "metadata-check"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Internal test suite for validating workspace publishing metadata"
+publish = false
+
+[dependencies]
+toml = { workspace = true }
+serde = { workspace = true }

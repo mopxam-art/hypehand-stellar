@@ -1,0 +1,25 @@
+[package]
+name = "hypehand-telemetry"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+description = "Structured tracing subscriber and telemetry spans for HypeHand Stellar services"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+]
+
+[dependencies]
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+[dev-dependencies]
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
