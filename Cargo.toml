@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/metrics",
+]
+
+[workspace.dependencies]
+metrics = "0.24"
+metrics-exporter-prometheus = "0.16"

@@ -1,0 +1,13 @@
+[package]
+name = "hypehand-metrics"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+metrics = { workspace = true }
+metrics-exporter-prometheus = { workspace = true }
+
+[dev-dependencies]
+metrics = { workspace = true }
+metrics-exporter-prometheus = { workspace = true }
